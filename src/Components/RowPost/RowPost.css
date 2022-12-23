@@ -14,23 +14,41 @@
     display: none;
 }
 
+.divZoom{
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.divZoom:hover {
+    transform: scale(1.02);
+}
 
 .poster{
     max-height: 250px;
     margin-right: 10px;
-    transition: 0.3s;
 }
 
-.poster:hover {
-    transform: scale(1.02);
-}
 
 .smallPoster{
     max-height: 150px;
     margin-right: 10px;
-    transition: 0.3s;
 }
 
-.smallPoster:hover {
-    transform: scale(1.02);
+
+
+.posterTitle{
+    position: absolute;
+    margin: 5px;
+    font-weight: bolder;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.399);
 }
+
+.smallPosterTitle{
+    position: absolute;
+    font-size: 12px;
+    margin: 5px;
+    font-weight: bolder;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.399);
+}
+
